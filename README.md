@@ -4,7 +4,7 @@ Run BOSA accessibility checker on a URL.
 
 ## Installation
 
-ddev add-on get Mschuddings/ddev-bosa_a11y
+ddev add-on get Mschuddings/ddev-bosa_a11y && ddev restart
 
 ## Usage
 
