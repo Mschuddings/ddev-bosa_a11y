@@ -1,0 +1,21 @@
+#!/bin/bash
+#ddev-generated
+## Description: Run bosa_a11y checker
+## Usage: bosa_a11y [args]
+## Example: "ddev bosa_a11y https://www.politie.be/"
+## ExecRaw: true
+
+output=$(docker exec ddev-federale-politiesite-bosa-a11y node bosa.js "$@")
+SUBSTRING=`echo $output | cut -d "@" -f2 | cut -d "@" -f1`
+
+case $OSTYPE in
+  linux-gnu)
+    xdg-open ${DDEV_APPROOT}/.ddev/bosa_a11y/${SUBSTRING}
+    ;;
+  "darwin"*)
+    open ${DDEV_APPROOT}/.ddev/bosa_a11y/${SUBSTRING}
+    ;;
+  "win*"* | "msys"*)
+    start ${DDEV_APPROOT}/.ddev/bosa_a11y/${SUBSTRING}
+    ;;
+esac
