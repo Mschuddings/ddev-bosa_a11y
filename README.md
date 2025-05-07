@@ -18,3 +18,10 @@ ddev bosa_a11y https://www.example.be https://www.example2.be https://www.exampl
 ## Previous reports.
 
 All reports will be in your .ddev/bosa_a11y folder.
+
+## Options
+
+Available standards: "WCAG2A", "WCAG2AA", "WCAG2AAA", "Section508"
+They can be passed via "--standard=WCAG2A".
+
+The standard will also be added to the report.
