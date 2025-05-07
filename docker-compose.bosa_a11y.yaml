@@ -20,13 +20,3 @@ services:
       # the default domain
       - ddev-router:$DDEV_HOSTNAME
       # extra domains (multisite)
-      - ddev-router:politie.ddev.site
-      - ddev-router:www.politie.ddev.site
-      - ddev-router:police.ddev.site
-      - ddev-router:www.police.ddev.site
-      - ddev-router:polizei.ddev.site
-      - ddev-router:www.polizei.ddev.site
-      - ddev-router:aigpol.ddev.site
-      - ddev-router:www.aigpol.ddev.site
-      - ddev-router:politiehekla.ddev.site
-      - ddev-router:www.politiehekla.ddev.site

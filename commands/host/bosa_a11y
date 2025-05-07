@@ -2,10 +2,10 @@
 #ddev-generated
 ## Description: Run bosa_a11y checker
 ## Usage: bosa_a11y [args]
-## Example: "ddev bosa_a11y https://www.politie.be/"
+## Example: "ddev bosa_a11y https://www.example.be/"
 ## ExecRaw: true
 
-output=$(docker exec ddev-federale-politiesite-bosa-a11y node bosa.js "$@")
+output=$(docker exec ddev-${DDEV_PROJECT}-bosa-a11y node bosa.js "$@")
 SUBSTRING=`echo $output | cut -d "@" -f2 | cut -d "@" -f1`
 
 case $OSTYPE in
