@@ -2,6 +2,10 @@
 
 Run BOSA accessibility checker on a URL.
 
+## Installation
+
+ddev add-on get Mschuddings/ddev-bosa_a11y
+
 ## Usage
 
 ddev bosa_a11y https://www.politie.be
