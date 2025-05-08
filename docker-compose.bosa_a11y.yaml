@@ -10,7 +10,8 @@ services:
     container_name: ddev-${DDEV_SITENAME}-bosa-a11y
     image: mschuddings/bosa_a11y
     volumes:
-      - ./bosa_a11y:/home/results
+      - ./bosa_a11y/results:/home/results
+      - ./bosa_a11y/config:/home/config
       - "ddev-global-cache:/mnt/ddev-global-cache"
     # These labels ensure this service is discoverable by ddev.
     labels:

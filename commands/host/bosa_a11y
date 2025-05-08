@@ -10,12 +10,12 @@ SUBSTRING=`echo $output | cut -d "@" -f2 | cut -d "@" -f1`
 
 case $OSTYPE in
   linux-gnu)
-    xdg-open ${DDEV_APPROOT}/.ddev/bosa_a11y/${SUBSTRING}
+    xdg-open ${DDEV_APPROOT}/.ddev/bosa_a11y/results/${SUBSTRING}
     ;;
   "darwin"*)
-    open ${DDEV_APPROOT}/.ddev/bosa_a11y/${SUBSTRING}
+    open ${DDEV_APPROOT}/.ddev/bosa_a11y/results/${SUBSTRING}
     ;;
   "win*"* | "msys"*)
-    start ${DDEV_APPROOT}/.ddev/bosa_a11y/${SUBSTRING}
+    start ${DDEV_APPROOT}/.ddev/bosa_a11y/results/${SUBSTRING}
     ;;
 esac
