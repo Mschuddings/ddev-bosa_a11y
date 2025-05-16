@@ -8,7 +8,8 @@ services:
     # This is the name of the container. It is recommended to follow the same
     # name convention used in the main docker-compose.yml file.
     container_name: ddev-${DDEV_SITENAME}-bosa-a11y
-    image: mschuddings/bosa_a11y
+    image: mschuddings/bosa_a11y:latest
+    pull: always
     volumes:
       - ./bosa_a11y/results:/home/results
       - ./bosa_a11y/config:/home/config
