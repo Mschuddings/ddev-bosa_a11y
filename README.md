@@ -45,3 +45,10 @@ They can be passed via for example: "--standard=WCAG2A".
 The standard will also be added to the report.
 
 Language is not supported it seems., (or not yet working)
+
+## FAQ
+
+### How do I test a whole site
+
+Convert your sitemap to CSV via: https://www.bulkgpt.ai/tools/xmltocsv
+And then jut use that CSV to test your whole website.
