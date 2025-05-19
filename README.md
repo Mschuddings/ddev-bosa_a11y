@@ -1,3 +1,7 @@
+# Screenshot
+![image](https://github.com/user-attachments/assets/fd94af76-6a33-462b-8953-4678f11cee48)
+
+
 # DDEV Addon BOSA a11y
 
 Run BOSA accessibility checker on a URL.
@@ -27,7 +31,7 @@ ddev bosa_a11y urls.csv
 
 The file must be inside of ".ddev/bosa_a11y/config"
 
-It will only open one HTML report though but all urls will be checked of course.
+It will only open one HTML report but all urls will be checked of course.
 
 ## Previous reports.
 
@@ -40,11 +44,11 @@ Available standards: "WCAG2A", "WCAG2AA", "WCAG2AAA", "Section508".
 They can be passed via for example: "--standard=WCAG2A".
 The standard will also be added to the report.
 
-Language is not supported it seems., (or not yet working)
+Language is not supported it seems. (or not yet working)
 
 ## FAQ
 
 ### How do I test a whole site
 
 Convert your sitemap to CSV via: https://www.bulkgpt.ai/tools/xmltocsv
-And then jut use that CSV to test your whole website.
+And then just use that CSV to test your whole website.
