@@ -46,6 +46,9 @@ The standard will also be added to the report.
 
 Language is not supported it seems. (or not yet working)
 
+Possibility to exclude a certain element ID (for example cookie banner ID)
+This can be done via: "--exclude-element-id=XXX"
+
 ## FAQ
 
 ### How do I test a whole site
