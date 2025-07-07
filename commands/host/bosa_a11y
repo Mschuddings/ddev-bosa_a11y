@@ -10,7 +10,11 @@ SUBSTRING=`echo $output | cut -d "@" -f2 | cut -d "@" -f1`
 
 case $OSTYPE in
   linux-gnu)
-    xdg-open ${DDEV_APPROOT}/.ddev/bosa_a11y/results/${SUBSTRING}
+    if [ -n "$WSL_DISTRO_NAME" ]; then
+      explorer.exe "$(wslpath -w $PWD/reports/bosa_a11y/results/${SUBSTRING})"
+    else
+      xdg-open ${DDEV_APPROOT}/reports/bosa_a11y/results/${SUBSTRING}
+    fi
     ;;
   "darwin"*)
     open ${DDEV_APPROOT}/.ddev/bosa_a11y/results/${SUBSTRING}
