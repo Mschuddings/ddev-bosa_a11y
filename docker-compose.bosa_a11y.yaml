@@ -11,7 +11,7 @@ services:
     image: mschuddings/bosa_a11y:latest
     pull_policy: always
     volumes:
-      - ./bosa_a11y/results:/home/results
+      -  ../reports/bosa_a11y/results:/home/results
       - ./bosa_a11y/config:/home/config
       - "ddev-global-cache:/mnt/ddev-global-cache"
     # These labels ensure this service is discoverable by ddev.
