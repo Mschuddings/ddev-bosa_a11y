@@ -1,3 +1,14 @@
+# Deprecated
+
+BOSA checker is deprecated. The BOSA plugin isn't maintained anymore by BOSA so I deprecate this as well.
+
+
+
+
+
+
+
+
 # Screenshot
 ![image](https://github.com/user-attachments/assets/fd94af76-6a33-462b-8953-4678f11cee48)
 
